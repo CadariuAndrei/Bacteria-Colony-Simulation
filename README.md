@@ -38,7 +38,7 @@ in our case :    gcc -Wall -o b bacteria.c
 
 EXECUTION 
 
-./b <input_file> <generations> <thread_count>
+./b <input_file> <number_of_generations> <thread_count>
 
 
 
