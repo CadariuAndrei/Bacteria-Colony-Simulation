@@ -17,6 +17,7 @@ Initial configurations are loaded from files. The first line contains the number
 
 
 
+
 REQUIREMENTS
 
 Implement a program that determines the final configuration both in serial and parallel .
