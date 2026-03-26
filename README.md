@@ -1,5 +1,5 @@
 # Bacteria-Colony-Simulation
-Problem description
+PROBLEM DESCRIPTION
 
 Simulate the evolution of a  colony of bacteria that is grown on a culture surface of rectangular shape. The culture surface is a 2D grid and bacteria can grow in grid points.
 
@@ -17,7 +17,7 @@ Initial configurations are loaded from files. The first line contains the number
 
 
 
-Requirements
+REQUIREMENTS
 
 Implement a program that determines the final configuration both in serial and parallel .
 
