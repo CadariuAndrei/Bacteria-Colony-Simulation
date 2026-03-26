@@ -32,9 +32,6 @@ TECHNICAL FEATURES
 -Modes: -DEBUG: Real-time visual evolution of the grid.
         -NORMAL: Optimized for performance measurements.
 
-
-In our case for the executable b.exe:
-
 COMPILATION : use  gcc
 
 in our case :    gcc -Wall -o b bacteria.c
