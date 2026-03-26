@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include <string.h>
+#include<pthread>
+
+#define NUM_THREADS 2
+
+
+pthread_mutex_t count_mutex;
+
+void *inc_count(void *t)
+{
+    int my_rank=*(int *)t;
+    pthread_mutex_lock(&count_mutex);
+    count++;
+    pthread_mutex_lock(&count_mutex);
+    return NULL;
+}
+int main(int argc,char **argv)
+{
+
+    pthread_t threads[NUM_THREADS];
+    int tid[NUM_THREADS];
+
+    for(int i=0;i<NUM_THREADS;i++)
+    {
+        tid[i]=i;
+        pthread_create(&threads[i],NULL,inc_count,(void*)&tid[i]);
+    }
+
+    for(int i=0;i<NUM_THREADS;i++)
+    {
+        pthread_join(threads[i],NULL);
+    }
+
+
+    return 0;
+}
